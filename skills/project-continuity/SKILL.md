@@ -32,6 +32,7 @@ restructuring those artifacts.
 ## Invariants
 
 - Preserve the user's requested scope. A continuity audit does not authorize code changes, broad document rewrites, commits, issue updates, or external messages.
+- Do not persist a discussion outcome as an accepted decision unless the user both explicitly confirms the concrete conclusion and explicitly requests the documentation update. Partial agreement, a current leaning, follow-up questions, or approval of one explanation satisfies neither requirement. If either condition is missing, keep the matter open or discussing and report any pending documentation sync without modifying project memory.
 - Inspect existing repository instructions, documentation, version-control state, code, and tests before proposing a structure. Extend a coherent system instead of imposing this skill's preferred names.
 - Scale the system to the project. Do not create ceremonial documents that will not own a distinct fact.
 - Keep one authoritative home for each fact; summaries link to it instead of duplicating its full content.

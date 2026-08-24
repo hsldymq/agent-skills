@@ -36,6 +36,12 @@ partially completed task merely because its originating conversation is unavaila
 
 ## Handoff
 
+Before updating decision-bearing artifacts, verify two independent conditions: the user explicitly accepted the
+complete conclusion, and the user explicitly requested that it be written to project documentation. Partial
+agreement, a current leaning, follow-up questions, or approval of one explanation is not enough. If either
+condition is absent, keep the matter open or discussing and report the pending documentation update without
+modifying project memory.
+
 Update only artifacts affected by the work:
 
 1. Put the normative mechanism or contract in its design owner.
