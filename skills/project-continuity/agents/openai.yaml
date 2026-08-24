@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Continuity"
+  short_description: "让长期项目跨会话保持设计、实现与状态连续"
+  default_prompt: "使用 $project-continuity 为这个项目建立或继续一套以仓库为记忆的开发接力流程，默认使用中文文档。"
