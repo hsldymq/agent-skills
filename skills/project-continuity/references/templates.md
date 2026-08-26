@@ -74,6 +74,25 @@ language; do not produce bilingual copies unless requested.
 ## 重新评估条件
 ```
 
+## Design map / catalog
+
+Use this only when several bounded designs need a shared inventory or dependency map. Keep dynamic implementation
+and verification facts in the status artifact.
+
+```markdown
+# 设计地图
+
+## 设计目录
+| 设计 | 权威范围 | 设计状态 | 依赖 |
+|---|---|---|---|
+
+## 依赖关系与阅读顺序
+
+## 维护规则
+- 每条完整规则只有一个权威设计；其他文件只摘要并链接。
+- 本文件不维护实现、验证、工作区或唯一下一步。
+```
+
 ## Bounded design
 
 ```markdown
@@ -82,6 +101,8 @@ language; do not produce bilingual copies unless requested.
 状态：
 最后更新：
 影响里程碑：
+权威范围：
+依赖设计：
 
 ## 目的与范围
 ## 非目标
@@ -98,6 +119,10 @@ language; do not produce bilingual copies unless requested.
 ## 开放问题
 ## 重新评估条件
 ```
+
+When examples are included, label whether they are a finalized public API, a normative protocol shape, or only an
+illustrative implementation sketch. Do not let sample method names, channels, state enums, or private data
+structures become contractual accidentally.
 
 ## Repository-local agent/contributor instructions
 

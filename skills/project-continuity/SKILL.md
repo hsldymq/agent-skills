@@ -37,6 +37,9 @@ restructuring those artifacts.
 - Scale the system to the project. Do not create ceremonial documents that will not own a distinct fact.
 - Keep one authoritative home for each fact; summaries link to it instead of duplicating its full content.
 - Track design, implementation, and verification independently. Accepted design is not implemented behavior; implemented behavior is not verified behavior.
+- Respect the project's decision authority and acceptance process. A leaning, illustrative example, partial agreement,
+  or unresolved discussion is not an accepted decision. Record it as proposed or discussing until the authorized
+  participant or process has clearly accepted it; do not silently promote conversational momentum into project memory.
 - Record durable decisions with their context, constraints, alternatives, rationale, consequences, evidence, and reconsideration triggers. Preserve superseded history.
 - Treat code and tests as evidence of implementation, not as automatic proof that the intended contract is correct or complete.
 - When documentation and repository reality conflict, surface the conflict and resolve the stale source deliberately. Never silently choose whichever is convenient.

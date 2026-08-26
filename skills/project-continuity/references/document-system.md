@@ -12,6 +12,7 @@ The names below describe roles, not mandatory filenames. Preserve an existing co
 | Roadmap | Milestone dependencies, scope, non-scope, exit evidence | A date promise or detailed design |
 | Architecture | Cross-cutting components, boundaries, ownership, lifecycle, invariants | A live discussion queue |
 | Decision record | Durable choice, alternatives, rationale, consequences, reconsideration | A changelog entry for every edit |
+| Design map/catalog | Design inventory, authoritative scope, dependencies, design status, reading order | A second status report or duplicate specification |
 | Design/specification | A bounded capability's contract, flows, states, failure semantics, validation | A claim that code already exists |
 | Status/handoff | Current snapshot, open questions, evidence, worktree condition, next action | The full historical record |
 | Code/tests | Implemented behavior and executable evidence | Proof of undocumented product intent |
@@ -43,6 +44,32 @@ clearly and account for offline/access constraints; do not create a competing re
 
 Add a role when its facts change at a different cadence, need a different audience, or repeatedly conflict with
 another artifact. Do not add it merely because the template exists.
+
+## Design granularity and maps
+
+Split designs by cohesive capability boundary, not by every atomic decision. A bounded design should normally
+have a recognizable responsibility, lifecycle, ownership boundary, invariants, and validation surface that can
+evolve together. Consider splitting an oversized design when it contains several independently changing
+capabilities, mixes different milestone or design states, has become difficult to navigate, or repeatedly causes
+contributors to miss related rules.
+
+Do not trade one monolith for dozens of fragments. Local naming choices, a single state transition, or one
+alternative within a capability usually belongs in that capability's design. Cross-cutting terminology,
+relationships, and invariants may remain in a concise overview, while the complete normative rule lives in one
+capability design.
+
+When several designs form a dependency graph, add a design map or catalog if it materially improves discovery.
+It may own:
+
+- each design's authoritative scope;
+- design status and explicit partial-status qualification;
+- dependencies and recommended reading order;
+- links to the authoritative designs and relevant decision records.
+
+It must not duplicate full contracts or become another implementation/status tracker. Keep implementation,
+verification, worktree condition, blockers, and the current next action in the status/handoff owner. The design
+map may summarize design status, but the design file remains the detailed source for which sections are accepted
+or still discussing.
 
 ## Independent capability status
 

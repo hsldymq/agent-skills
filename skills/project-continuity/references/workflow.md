@@ -70,6 +70,18 @@ A routine implementation should not force updates to every document. Use the cha
    for the missing decision.
 7. Leave a documented reading order and handoff protocol inside the repository.
 
+When splitting, moving, or renaming authoritative documentation:
+
+1. Inventory the source headings, inbound links, relative references, and the fact owner for every section.
+2. Move normative content to its new owner; do not leave a second complete authoritative copy behind.
+3. Preserve a concise overview or navigation entry when callers still need the former conceptual starting point.
+4. Update the entry point, architecture, status, roadmap, decision/ADR indexes, repository instructions, and other
+   backlinks affected by the move. Update only artifacts that actually reference or summarize the moved facts.
+5. Preserve accepted history and rationale. If content is intentionally summarized or retired, make that boundary
+   explicit rather than silently dropping it.
+6. Validate both relative file targets and heading anchors, then search for stale terminology and former authority
+   claims. Report any redirects or compatibility links deliberately left in place.
+
 ## Quality review
 
 Check these observable properties:
@@ -80,5 +92,8 @@ Check these observable properties:
 - Open questions are actionable, not vague topic labels.
 - There is at most one project-level “next action” unless independent workstreams are explicitly modeled.
 - Dynamic status does not duplicate complete designs or decision history.
+- Multiple designs have discoverable authoritative scopes and dependencies; an index or design map, when present,
+  does not duplicate implementation/verification status.
+- Proposed directions, illustrative APIs, and partial agreement are not mislabeled as accepted decisions.
 - New documentation uses the selected language consistently; a new project defaults to Simplified Chinese.
 - Links resolve and validation evidence matches the present worktree.
